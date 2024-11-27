@@ -50,7 +50,7 @@ class AuthController extends Controller {
 
       if (user != null) {
         // user already exist
-              print("${user!['email']}");
+              print("${user['email']}");
        return Response.json(
             {'msg': 'User already exist', 'code': 409, 'data': ""}, 409);
       }
